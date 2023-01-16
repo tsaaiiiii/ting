@@ -1,0 +1,337 @@
+
+.chattalker{
+    margin: 0 auto; 
+    border: solid 2px black;
+    @include mac{
+        max-width: 1920px;
+    }
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    
+     .home{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        z-index: -100;
+        width: 70%;
+        
+    }
+
+
+}
+.navbar{
+    width: 100%;
+    display: flex;
+   
+    
+}
+ .logo img{
+    margin-top: 30px;
+    margin-left: 150px;
+    width: 130px;
+    z-index: 100;
+ }
+ input{
+   @include inputBottom;
+   
+ }
+ input:hover{
+    opacity: 1;
+    transition-duration: 0.8s;
+    background-color: darken($payment_color,10%);
+    font-weight: bold;
+  }
+  .bookcover{
+    display: flex;
+    width: 100%;
+  }
+   .illustration img{
+    width: 400px;
+    z-index: 100;
+    margin-left: 250px;
+    margin-top: 150px;
+    padding: 10px;
+  }
+.title{
+    @include topic_font;
+    
+    p{
+       @include p_font;     
+    }
+}
+.specialh2{
+    font-size: 15px;
+    font-weight: bold;
+    color: $topic_color;
+}
+.paragraph_2{
+    width: 100%;
+    position: relative;
+}
+.green_circle img{
+    position: absolute;
+    top:-100px;
+    left:-220px;
+}
+.slogan_1{
+    @include slogan;
+}
+.social_media{
+    @include display_set;
+    h1{
+        font-size: 20px;
+        padding-bottom: 15px;
+      }
+    p{
+       @include p_font;
+       color: #747474;
+    }
+}
+.facebook img,.line img,.ig img{
+    @include social_media;
+}
+.paragraph_3{
+    width: 100%;
+    position: relative;
+}
+.slogan_2{
+    display:block;
+    .role_slogan{
+        @include slogan;
+        padding: 150px 0px 20px ;
+    }
+    .service_slogan{
+        @include p_font;
+    
+    }
+
+}
+
+
+
+
+
+
+
+
+.card_total{
+   @include display_set;
+   z-index: 100;
+   h1{
+    color: $topic_color;
+ }
+   p{
+    @include p_font;
+    line-height: 0.5cm;
+    margin-top: 10px;
+    font-size: 12px;
+ }
+
+}
+.introduce{
+    background-color: #fff;
+    width: 200px;
+    height: 100px;
+    margin-top: 15px;  
+}
+.card{
+    margin: 50px 50px 50px;
+    box-shadow: 0px 2px 10px #00000014;   
+    border-radius: 0px 0px 12px 12px ;
+}
+.card img{
+  width: 200px;  
+  border-radius: 12px 12px 0px 0px ;
+}
+.phototext{
+    border-radius: 20px;
+}
+
+.balls2{
+    margin-left: 1200px;
+    margin-top: -180px;
+    z-index: -100;
+    overflow: hidden;
+}
+
+
+ 
+.paragraph_4{
+    margin-top: -50px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    .frame_total{
+        width: 60%;
+        @include display_set;
+        flex-wrap:wrap;
+    }
+    .brand_introduce{
+        width: 40%;
+    }
+}
+.circle {
+    box-shadow: 0px 2px 10px #00000014;
+    border: solid 1px white;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    z-index: -100;
+    margin-top: 25px;
+    margin-left: 5px;
+    
+  }
+
+  .frame_total{
+     
+      img{
+          margin-top: 5px;
+          width: 40px;    
+      }
+      
+      h1{
+         text-align: left;
+          margin: 30px 30px 20px ;
+      }
+
+      p{
+          @include p_font;
+          text-align: left;
+          margin: 0px 30px 80px ;;
+      }
+  
+      .frame_1{
+          left:170px;
+          @include frame;
+         
+      }
+      .frame_2{
+          @include frame;
+          left:400px;
+      }
+      .frame_3{
+          @include frame;
+          top: 300px;
+          left:170px;
+      }
+      .frame_4{
+          @include frame;
+          top: 300px;
+          left:400px;
+      }
+     }
+
+
+   .brand_introduce{
+    h1{
+        
+        text-align: left;
+        margin: 200px 0px 20px 50px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    p{
+        @include p_font;
+        text-align: left;
+        margin-left: 50px;
+    }
+    button{
+        @include inputBottom;
+        margin-left: 50px;
+        width: 100px;
+        background-color: $topic_color;
+    }
+   }
+   
+
+
+
+
+   .paragraph_5{
+    position: relative;
+       h1{
+           @include slogan;
+           padding-top: 100px;
+           margin-bottom: 50px;
+       }
+   }
+   .balls_3 img{
+        width: 10%;
+        z-index: -100;
+        position: absolute;
+        top:130px;
+        left:100px
+   }
+   .command{
+    display: flex;
+    @include display_set;
+   }
+   .user {
+    width: 25%;
+    height: 210px;
+    margin-left: 10px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px #00000014;
+
+      img{
+      @include user;
+   }
+      p{
+        @include p_font;
+        text-align: left;
+        margin: 15px;
+      }
+}
+.line_s{
+    border: solid 1px #dddddd;
+    width: 90%;
+    margin: 0px 20px;
+    opacity:0.6;
+}
+.company{
+    @include p_font;
+    text-align: left;
+    margin: 15px;
+    font-weight: bold;
+}
+.name{
+    display: flex;
+    
+    img{
+        margin-left: 5px;
+        margin-top: 18px;
+        width: 5%;
+        height: 20%;
+    }
+    p{
+        margin-right: 100px;
+    }
+}
+
+.footer {
+    width: 100%;
+    img{
+        width: 100%;
+        margin: 150px 0px 50px;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: -150px;
+    }
+}
+.footer_button{
+  margin-top: 50px;
+    button{
+        display: block;
+        @include inputBottom;
+        background-color: $topic_color;
+        margin: 0 auto;
+    }
+}

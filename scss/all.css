@@ -1,0 +1,484 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.chattalker {
+  margin: 0 auto;
+  border: solid 2px black;
+}
+@media all and (min-width: 1121px) and (max-width: 2000px) {
+  .chattalker {
+    max-width: 1920px;
+  }
+}
+
+.header {
+  position: relative;
+  width: 100%;
+}
+.header .home {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: -100;
+  width: 70%;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+}
+
+.logo img {
+  margin-top: 30px;
+  margin-left: 150px;
+  width: 130px;
+  z-index: 100;
+}
+
+input {
+  border: 0px;
+  border-radius: 20px;
+  background-color: #FF5D50;
+  width: 130px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 730px;
+  z-index: 100;
+  opacity: 1;
+  cursor: pointer;
+  color: white;
+}
+
+input:hover {
+  opacity: 1;
+  transition-duration: 0.8s;
+  background-color: #ff2e1d;
+  font-weight: bold;
+}
+
+.bookcover {
+  display: flex;
+  width: 100%;
+}
+
+.illustration img {
+  width: 400px;
+  z-index: 100;
+  margin-left: 250px;
+  margin-top: 150px;
+  padding: 10px;
+}
+
+.title {
+  font-weight: bold;
+  margin-left: 150px;
+  margin-top: 90px;
+  font-size: 32px;
+  line-height: 45px;
+}
+.title p {
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 2em;
+  text-align: center;
+}
+
+.specialh2 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #56C4C5;
+}
+
+.paragraph_2 {
+  width: 100%;
+  position: relative;
+}
+
+.green_circle img {
+  position: absolute;
+  top: -100px;
+  left: -220px;
+}
+
+.slogan_1 {
+  text-align: center;
+  padding: 200px 0px 50px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.social_media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+}
+.social_media h1 {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.social_media p {
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 2em;
+  text-align: center;
+  color: #747474;
+}
+
+.facebook img, .line img, .ig img {
+  width: 50px;
+  padding: 20px 150px 20px 150px;
+}
+
+.paragraph_3 {
+  width: 100%;
+  position: relative;
+}
+
+.slogan_2 {
+  display: block;
+}
+.slogan_2 .role_slogan {
+  text-align: center;
+  padding: 200px 0px 50px;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 150px 0px 20px;
+}
+.slogan_2 .service_slogan {
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 2em;
+  text-align: center;
+}
+
+.card_total {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  z-index: 100;
+}
+.card_total h1 {
+  color: #56C4C5;
+}
+.card_total p {
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 2em;
+  text-align: center;
+  line-height: 0.5cm;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.introduce {
+  background-color: #fff;
+  width: 200px;
+  height: 100px;
+  margin-top: 15px;
+}
+
+.card {
+  margin: 50px 50px 50px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 0px 0px 12px 12px;
+}
+
+.card img {
+  width: 200px;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.phototext {
+  border-radius: 20px;
+}
+
+.balls2 {
+  margin-left: 1200px;
+  margin-top: -180px;
+  z-index: -100;
+  overflow: hidden;
+}
+
+.paragraph_4 {
+  margin-top: -50px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.paragraph_4 .frame_total {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+.paragraph_4 .brand_introduce {
+  width: 40%;
+}
+
+.circle {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  border: solid 1px white;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  z-index: -100;
+  margin-top: 25px;
+  margin-left: 5px;
+}
+
+.frame_total img {
+  margin-top: 5px;
+  width: 40px;
+}
+.frame_total h1 {
+  text-align: left;
+  margin: 30px 30px 20px;
+}
+.frame_total p {
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 2em;
+  text-align: center;
+  text-align: left;
+  margin: 0px 30px 80px;
+}
+.frame_total .frame_1 {
+  left: 170px;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  margin: 20px;
+  border-radius: 12px;
+}
+.frame_total .frame_2 {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  margin: 20px;
+  border-radius: 12px;
+  left: 400px;
+}
+.frame_total .frame_3 {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  margin: 20px;
+  border-radius: 12px;
+  top: 300px;
+  left: 170px;
+}
+.frame_total .frame_4 {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  margin: 20px;
+  border-radius: 12px;
+  top: 300px;
+  left: 400px;
+}
+
+.brand_introduce h1 {
+  text-align: left;
+  margin: 200px 0px 20px 50px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.brand_introduce p {
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 2em;
+  text-align: center;
+  text-align: left;
+  margin-left: 50px;
+}
+.brand_introduce button {
+  border: 0px;
+  border-radius: 20px;
+  background-color: #FF5D50;
+  width: 130px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 730px;
+  z-index: 100;
+  opacity: 1;
+  cursor: pointer;
+  color: white;
+  margin-left: 50px;
+  width: 100px;
+  background-color: #56C4C5;
+}
+
+.paragraph_5 {
+  position: relative;
+}
+.paragraph_5 h1 {
+  text-align: center;
+  padding: 200px 0px 50px;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
+
+.balls_3 img {
+  width: 10%;
+  z-index: -100;
+  position: absolute;
+  top: 130px;
+  left: 100px;
+}
+
+.command {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.user {
+  width: 25%;
+  height: 210px;
+  margin-left: 10px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+}
+.user img {
+  width: 25%;
+  border-radius: 100%;
+  margin-left: -200px;
+  margin-top: -50px;
+  z-index: 100;
+}
+.user p {
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 2em;
+  text-align: center;
+  text-align: left;
+  margin: 15px;
+}
+
+.line_s {
+  border: solid 1px #dddddd;
+  width: 90%;
+  margin: 0px 20px;
+  opacity: 0.6;
+}
+
+.company {
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 2em;
+  text-align: center;
+  text-align: left;
+  margin: 15px;
+  font-weight: bold;
+}
+
+.name {
+  display: flex;
+}
+.name img {
+  margin-left: 5px;
+  margin-top: 18px;
+  width: 5%;
+  height: 20%;
+}
+.name p {
+  margin-right: 100px;
+}
+
+.footer {
+  width: 100%;
+}
+.footer img {
+  width: 100%;
+  margin: 150px 0px 50px;
+}
+.footer h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: -150px;
+}
+
+.footer_button {
+  margin-top: 50px;
+}
+.footer_button button {
+  display: block;
+  border: 0px;
+  border-radius: 20px;
+  background-color: #FF5D50;
+  width: 130px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 730px;
+  z-index: 100;
+  opacity: 1;
+  cursor: pointer;
+  color: white;
+  background-color: #56C4C5;
+  margin: 0 auto;
+}/*# sourceMappingURL=all.css.map */
