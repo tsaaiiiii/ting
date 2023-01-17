@@ -1,0 +1,370 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.page2 {
+  border: solid 2px black;
+  overflow: hidden;
+  margin: 0 auto;
+}
+@media all and (min-width: 1121px) and (max-width: 2000px) {
+  .page2 {
+    max-width: 1920px;
+  }
+}
+.page2 .top_botton {
+  text-decoration: none;
+  border: solid 1px #56C4C5;
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  border-radius: 100%;
+  z-index: 500;
+  background-color: #56C4C5;
+  cursor: pointer;
+}
+.page2 .top_botton h1 {
+  text-align: center;
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.top_botton:hover {
+  border: solid 1px #56C4C5;
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  border-radius: 100%;
+  z-index: 500;
+  background-color: #56C4C5;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  transition-duration: 0.5s;
+}
+.top_botton:hover h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.page2_header {
+  width: 100%;
+  position: relative;
+}
+
+.background_circle {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 600px;
+  background-color: #ededed;
+  z-index: -100;
+  border-radius: 0px 0px 0px 40%;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-self: flex-end;
+}
+.navbar .logo img {
+  margin-top: 30px;
+  margin-left: 150px;
+  width: 130px;
+}
+.navbar input {
+  border: solid 1px #FF5D50;
+  border-radius: 20px;
+  background-color: #FF5D50;
+  width: 130px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 800px;
+  z-index: 100;
+  opacity: 1;
+  cursor: pointer;
+  color: white;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.banner img {
+  width: 80%;
+  position: absolute;
+  top: -70px;
+  left: 400px;
+}
+
+.title {
+  width: 40%;
+  z-index: 100;
+}
+.title .title_text {
+  margin: 150px 0px 0px 150px;
+  line-height: 2.5em;
+}
+.title .title_text h1 {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.paragraph_1 {
+  width: 100%;
+}
+.paragraph_1 h1 {
+  text-align: center;
+  padding: 200px 0px 50px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 300px;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+}
+.number button {
+  border: solid 1px #56C4C5;
+  border-radius: 20px;
+  background-color: white;
+  width: 100px;
+  height: 40px;
+  z-index: 100;
+  cursor: pointer;
+  color: #56C4C5;
+  margin: 0px 0px 20px 80px;
+}
+
+button:hover {
+  background-color: #56C4C5;
+  color: white;
+}
+
+.paragraph_2 {
+  width: 100%;
+  position: relative;
+}
+.paragraph_2 .yellow_balls {
+  position: absolute;
+  top: 100px;
+  left: -80px;
+}
+
+.project_intro {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.basic, .normal {
+  width: 350px;
+  height: 450px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 12px;
+  margin-left: 100px;
+}
+.basic h1, .normal h1 {
+  text-align: center;
+  padding: 10px 0px 15px 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.basic .line, .normal .line {
+  border: solid 1px #dddddd;
+  width: 100%;
+  margin: 0px 0px;
+  opacity: 0.5;
+}
+.basic p, .normal p {
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 2em;
+  text-align: center;
+  margin: 10px auto 5px;
+}
+.basic h3, .normal h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #56C4C5;
+}
+.basic span, .normal span {
+  font-size: 10px;
+}
+
+.members {
+  display: flex;
+  justify-content: center;
+}
+.members .subscribe, .members .payment {
+  width: 35%;
+  border: solid 1px #ededed;
+  background-color: #ededed;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 12px;
+  opacity: 0.8;
+}
+.members h2 {
+  font-size: 30px;
+  margin: auto 15px;
+}
+
+.payment h3 {
+  color: black;
+}
+
+.check_text {
+  display: flex;
+  margin-top: 10px;
+}
+.check_text .check {
+  padding-top: 10px;
+  margin-left: 30px;
+}
+.check_text .text {
+  margin-left: 10px;
+}
+
+.experience_button {
+  text-align: center;
+}
+.experience_button button {
+  border: solid 1px #56C4C5;
+  border-radius: 20px;
+  background-color: white;
+  width: 100px;
+  height: 40px;
+  z-index: 100;
+  cursor: pointer;
+  color: #56C4C5;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #56C4C5;
+  color: white;
+}
+
+.footer_text {
+  width: 100%;
+}
+.footer_text .questions h1 {
+  text-align: center;
+  padding: 200px 0px 50px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer_answer {
+  width: 45%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+ul {
+  margin: 0 auto;
+}
+ul li {
+  padding: 0;
+  list-style: none;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 12px;
+  cursor: pointer;
+}
+ul li p {
+  display: none;
+  font-size: 15px;
+  padding: 20px;
+}
+ul a {
+  text-decoration: none;
+  color: #35999a;
+  font-weight: bold;
+}
+
+.q {
+  margin-top: 20px;
+  line-height: 2em;
+}
+
+.all, .all2, .all3 {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.question_title {
+  font-size: 16px;
+}
+
+.all:hover h1, .all2:hover h1, .all3:hover h1 {
+  color: #56C4C5;
+  transition-duration: 0.5s;
+}
+
+.photo_plus {
+  padding-right: 10px;
+}
+
+img.minus, img.minus2, img.minus3 {
+  display: none;
+}/*# sourceMappingURL=all2.css.map */

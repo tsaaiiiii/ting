@@ -49,12 +49,24 @@
     margin: 20px;
     border-radius: 12px;
 }
-@mixin user{
-    width: 25%;
+@mixin user{  
     border-radius: 100%;
-    margin-left: -200px;
+    margin-left: -150px;
     margin-top: -50px;
     z-index: 100;
+    width: 25%;
+}
+@mixin back_botton{
+    border: solid 1px $topic_color ;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    border-radius: 100%;
+    z-index: 500;
+    background-color: $topic_color;
+    cursor: pointer;
 }
 
 
@@ -66,20 +78,15 @@
 
 
 
-
-
 @mixin mac{
-    @media all and (min-width: 1121px) and (max-width: 2000px){
+    @media all and (min-width: 1108px) and (max-width: 2000px){
       @content;
     }
   }
 
 
-  
-
-
   @mixin ipad{
-    @media all and (min-width:768px) and (max-width:1121px){
+    @media all and (min-width:768px) and (max-width:1107px){
         @content;
   }
 }

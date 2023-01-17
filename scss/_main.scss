@@ -1,22 +1,52 @@
 
 .chattalker{
     margin: 0 auto; 
-    border: solid 2px black;
+    
     @include mac{
         max-width: 1920px;
     }
+}
+.top_botton{
+    text-decoration: none;
+    @include back_botton;
+    h1{
+        text-align: center;
+        margin-top: 25px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
+.top_botton:hover{
+   @include back_botton;
+   width: 80px;
+   height: 80px;
+   transition-duration: 0.5s;
+   h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+   }
 }
 
 .header{
     position: relative;
     width: 100%;
-    
+    @include ipad{
+        width: 100%;
+    }
+    @include iphone{
+        width: 100%;
+       
+    }
      .home{
         position: absolute;
         right: 0px;
         top: 0px;
         z-index: -100;
         width: 70%;
+       @include iphone{
+        width: 100%;
+       }
         
     }
 
@@ -25,7 +55,13 @@
 .navbar{
     width: 100%;
     display: flex;
-   
+    @include ipad{
+        width: 100%;
+    }
+    @include iphone{
+        width: 100%;
+        flex-wrap: wrap;
+    }
     
 }
  .logo img{
@@ -33,9 +69,21 @@
     margin-left: 150px;
     width: 130px;
     z-index: 100;
+    @include iphone{
+        margin-left: 50px;
+    }
  }
  input{
    @include inputBottom;
+   @include ipad{
+    margin-left: 400px;
+   }
+   @include iphone{
+    
+    
+    margin-left: 400px;
+    margin-top: -30px;
+}
    
  }
  input:hover{
@@ -47,17 +95,39 @@
   .bookcover{
     display: flex;
     width: 100%;
+    position: relative;
+    @include ipad{
+        width: 100%;
+    }
+    @include iphone{
+        width: 100%;
+        flex-wrap: wrap;
+    }
   }
    .illustration img{
+    position: absolute;
     width: 400px;
     z-index: 100;
-    margin-left: 250px;
-    margin-top: 150px;
+    left: 600px;
+    top: 150px;
     padding: 10px;
+    @include ipad{
+        width: 300px;
+        left: 500px;
+        top:100px
+    }
+    @include iphone{
+        width: 400px;
+        left: 50px;
+        top:200px;
+    }
   }
 .title{
     @include topic_font;
-    
+    @include iphone{
+        margin-left: 50px;
+        margin-top: 20px;
+    }
     p{
        @include p_font;     
     }
@@ -70,17 +140,38 @@
 .paragraph_2{
     width: 100%;
     position: relative;
+    margin-top: 300px;
+    @include ipad{
+        width: 100%;
+    }
+    @include iphone{
+        width: 100%;
+       
+    }
 }
 .green_circle img{
     position: absolute;
     top:-100px;
     left:-220px;
+    @include iphone{
+        width: 60%;
+        top: -50px;
+    }
 }
 .slogan_1{
     @include slogan;
 }
 .social_media{
+    width: 100%;
     @include display_set;
+    @include ipad{
+        width: 100%;
+        flex-wrap:wrap;
+    }
+    @include iphone{
+        width: 100%;
+        flex-wrap: wrap;
+    }
     h1{
         font-size: 20px;
         padding-bottom: 15px;
@@ -93,9 +184,21 @@
 .facebook img,.line img,.ig img{
     @include social_media;
 }
+.facebook,.line,.ig{
+    @include iphone{
+        margin-top: 30px;
+    }
+}
 .paragraph_3{
     width: 100%;
     position: relative;
+    @include ipad{
+        width: 100%;
+    }
+    @include iphone{
+        width: 100%;
+       
+    }
 }
 .slogan_2{
     display:block;
@@ -120,6 +223,14 @@
 .card_total{
    @include display_set;
    z-index: 100;
+   width: 100%;
+   @include ipad{
+    width: 100%;
+    flex-wrap: wrap;
+}  @include iphone{
+    width: 100%;
+    flex-wrap: wrap;
+}
    h1{
     color: $topic_color;
  }
@@ -129,6 +240,14 @@
     margin-top: 10px;
     font-size: 12px;
  }
+  @include ipad{
+    width: 100%;
+    
+}
+  @include iphone{
+    width: 100%;
+    
+}
 
 }
 .introduce{
@@ -164,6 +283,14 @@
     width: 100%;
     display: flex;
     position: relative;
+    @include ipad{
+        width: 100%;
+    }
+    @include iphone{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
     .frame_total{
         width: 60%;
         @include display_set;
@@ -186,15 +313,23 @@
   }
 
   .frame_total{
+    @include iphone{
+        width: 100%;
+        margin-left: 100px;
+        margin-bottom: 50px;
+
+    }
      
       img{
           margin-top: 5px;
-          width: 40px;    
+          width: 40px;  
+           
       }
       
       h1{
          text-align: left;
           margin: 30px 30px 20px ;
+         
       }
 
       p{
@@ -226,17 +361,42 @@
 
 
    .brand_introduce{
+    @include iphone{
+        width: 100%;
+        margin-left: 100px;
+        margin-bottom: 50px;
+        text-align: center;
+
+    }
+    
+     
     h1{
         
         text-align: left;
         margin: 200px 0px 20px 50px;
         font-size: 24px;
         font-weight: bold;
+        @include iphone{
+          width: 100%;
+          line-height: 1.5em;
+          font-size: 18px;
+          text-align: center;
+        } 
+        
+    
     }
     p{
         @include p_font;
         text-align: left;
         margin-left: 50px;
+        @include iphone{
+            width: 100%;
+            text-align: left;
+            padding-right: 50px;
+            font-size: 12px;
+            line-height: 2em;
+          } 
+        
     }
     button{
         @include inputBottom;
@@ -251,14 +411,27 @@
 
 
    .paragraph_5{
+    width: 100%;
     position: relative;
        h1{
            @include slogan;
            padding-top: 100px;
            margin-bottom: 50px;
        }
+       @include ipad{
+        width: 100%;
+    }
+    @include iphone{
+        width: 100%;
+        
+    }
    }
    .balls_3 img{
+       @include iphone{
+        width:70%;
+        top:20px;
+        left:-180px;
+       }
         width: 10%;
         z-index: -100;
         position: absolute;
@@ -266,26 +439,44 @@
         left:100px
    }
    .command{
-    display: flex;
     @include display_set;
+    width: 100%;
+    @include ipad{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    @include iphone{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+       
    }
-   .user {
-    width: 25%;
+   .user{
+    width: 300px;
     height: 210px;
-    margin-left: 10px;
+    margin-left: 20px;
     border-radius: 12px;
     background-color: #fff;
     box-shadow: 0px 2px 10px #00000014;
-
-      img{
-      @include user;
-   }
-      p{
-        @include p_font;
-        text-align: left;
-        margin: 15px;
+      @include iphone{
+        margin-bottom: 100px;
       }
-}
+    p{
+        @include p_font;
+        margin: 20px;
+        text-align: left;
+    }
+    h3{
+        font-size: 12px;
+        margin-left: 20px;
+    }
+   }
+    img.photo_1,img.photo_2,img.photo_3{
+      @include user;
+    }
+      
+
 .line_s{
     border: solid 1px #dddddd;
     width: 90%;
@@ -293,33 +484,58 @@
     opacity:0.6;
 }
 .company{
-    @include p_font;
+    font-size: 15px;
     text-align: left;
-    margin: 15px;
+    margin: 20px;
     font-weight: bold;
 }
-.name{
-    display: flex;
-    
-    img{
-        margin-left: 5px;
-        margin-top: 18px;
-        width: 5%;
-        height: 20%;
+
+
+
+.name_star{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    @include ipad{
+        width: 100%;
+        display: flex;
     }
-    p{
-        margin-right: 100px;
+    @include iphone{
+        width: 100%;
+        flex-wrap: wrap;
     }
 }
+.star{
+    display:flex;
+    // border:solid 1px black;
+    margin-bottom: 20px;
+    
+    img{
+        margin-left: 10px;
+        width: 10%;
+    }
+   
+}
+
 
 .footer {
     width: 100%;
+    @include ipad{
+        width: 100%;
+    }
+    @include iphone{
+        width: 100%;
+       
+    }
     img{
         width: 100%;
         margin: 150px 0px 50px;
     }
 
     h1{
+        @include iphone{
+            margin-top: -80px;
+        }
         text-align: center;
         font-size: 24px;
         font-weight: bold;
@@ -333,5 +549,6 @@
         @include inputBottom;
         background-color: $topic_color;
         margin: 0 auto;
+        margin-bottom: 30px;
     }
 }

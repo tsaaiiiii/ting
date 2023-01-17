@@ -54,17 +54,67 @@ table {
 
 .chattalker {
   margin: 0 auto;
-  border: solid 2px black;
 }
-@media all and (min-width: 1121px) and (max-width: 2000px) {
+@media all and (min-width: 1108px) and (max-width: 2000px) {
   .chattalker {
     max-width: 1920px;
   }
 }
 
+.top_botton {
+  text-decoration: none;
+  border: solid 1px #56C4C5;
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  border-radius: 100%;
+  z-index: 500;
+  background-color: #56C4C5;
+  cursor: pointer;
+}
+.top_botton h1 {
+  text-align: center;
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.top_botton:hover {
+  border: solid 1px #56C4C5;
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  border-radius: 100%;
+  z-index: 500;
+  background-color: #56C4C5;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  transition-duration: 0.5s;
+}
+.top_botton:hover h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
 .header {
   position: relative;
   width: 100%;
+}
+@media all and (min-width: 768px) and (max-width: 1107px) {
+  .header {
+    width: 100%;
+  }
+}
+@media all and (max-width: 767px) {
+  .header {
+    width: 100%;
+  }
 }
 .header .home {
   position: absolute;
@@ -73,10 +123,26 @@ table {
   z-index: -100;
   width: 70%;
 }
+@media all and (max-width: 767px) {
+  .header .home {
+    width: 100%;
+  }
+}
 
 .navbar {
   width: 100%;
   display: flex;
+}
+@media all and (min-width: 768px) and (max-width: 1107px) {
+  .navbar {
+    width: 100%;
+  }
+}
+@media all and (max-width: 767px) {
+  .navbar {
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
 
 .logo img {
@@ -84,6 +150,11 @@ table {
   margin-left: 150px;
   width: 130px;
   z-index: 100;
+}
+@media all and (max-width: 767px) {
+  .logo img {
+    margin-left: 50px;
+  }
 }
 
 input {
@@ -99,6 +170,17 @@ input {
   cursor: pointer;
   color: white;
 }
+@media all and (min-width: 768px) and (max-width: 1107px) {
+  input {
+    margin-left: 400px;
+  }
+}
+@media all and (max-width: 767px) {
+  input {
+    margin-left: 400px;
+    margin-top: -30px;
+  }
+}
 
 input:hover {
   opacity: 1;
@@ -110,14 +192,41 @@ input:hover {
 .bookcover {
   display: flex;
   width: 100%;
+  position: relative;
+}
+@media all and (min-width: 768px) and (max-width: 1107px) {
+  .bookcover {
+    width: 100%;
+  }
+}
+@media all and (max-width: 767px) {
+  .bookcover {
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
 
 .illustration img {
+  position: absolute;
   width: 400px;
   z-index: 100;
-  margin-left: 250px;
-  margin-top: 150px;
+  left: 600px;
+  top: 150px;
   padding: 10px;
+}
+@media all and (min-width: 768px) and (max-width: 1107px) {
+  .illustration img {
+    width: 300px;
+    left: 500px;
+    top: 100px;
+  }
+}
+@media all and (max-width: 767px) {
+  .illustration img {
+    width: 400px;
+    left: 50px;
+    top: 200px;
+  }
 }
 
 .title {
@@ -126,6 +235,12 @@ input:hover {
   margin-top: 90px;
   font-size: 32px;
   line-height: 45px;
+}
+@media all and (max-width: 767px) {
+  .title {
+    margin-left: 50px;
+    margin-top: 20px;
+  }
 }
 .title p {
   font-size: 10px;
@@ -143,12 +258,29 @@ input:hover {
 .paragraph_2 {
   width: 100%;
   position: relative;
+  margin-top: 300px;
+}
+@media all and (min-width: 768px) and (max-width: 1107px) {
+  .paragraph_2 {
+    width: 100%;
+  }
+}
+@media all and (max-width: 767px) {
+  .paragraph_2 {
+    width: 100%;
+  }
 }
 
 .green_circle img {
   position: absolute;
   top: -100px;
   left: -220px;
+}
+@media all and (max-width: 767px) {
+  .green_circle img {
+    width: 60%;
+    top: -50px;
+  }
 }
 
 .slogan_1 {
@@ -159,11 +291,24 @@ input:hover {
 }
 
 .social_media {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: center;
   font-weight: bold;
+}
+@media all and (min-width: 768px) and (max-width: 1107px) {
+  .social_media {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+@media all and (max-width: 767px) {
+  .social_media {
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
 .social_media h1 {
   font-size: 20px;
@@ -182,9 +327,25 @@ input:hover {
   padding: 20px 150px 20px 150px;
 }
 
+@media all and (max-width: 767px) {
+  .facebook, .line, .ig {
+    margin-top: 30px;
+  }
+}
+
 .paragraph_3 {
   width: 100%;
   position: relative;
+}
+@media all and (min-width: 768px) and (max-width: 1107px) {
+  .paragraph_3 {
+    width: 100%;
+  }
+}
+@media all and (max-width: 767px) {
+  .paragraph_3 {
+    width: 100%;
+  }
 }
 
 .slogan_2 {
@@ -211,6 +372,19 @@ input:hover {
   text-align: center;
   font-weight: bold;
   z-index: 100;
+  width: 100%;
+}
+@media all and (min-width: 768px) and (max-width: 1107px) {
+  .card_total {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+@media all and (max-width: 767px) {
+  .card_total {
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
 .card_total h1 {
   color: #56C4C5;
@@ -223,6 +397,16 @@ input:hover {
   line-height: 0.5cm;
   margin-top: 10px;
   font-size: 12px;
+}
+@media all and (min-width: 768px) and (max-width: 1107px) {
+  .card_total {
+    width: 100%;
+  }
+}
+@media all and (max-width: 767px) {
+  .card_total {
+    width: 100%;
+  }
 }
 
 .introduce {
@@ -260,6 +444,18 @@ input:hover {
   display: flex;
   position: relative;
 }
+@media all and (min-width: 768px) and (max-width: 1107px) {
+  .paragraph_4 {
+    width: 100%;
+  }
+}
+@media all and (max-width: 767px) {
+  .paragraph_4 {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+}
 .paragraph_4 .frame_total {
   width: 60%;
   display: flex;
@@ -284,6 +480,13 @@ input:hover {
   margin-left: 5px;
 }
 
+@media all and (max-width: 767px) {
+  .frame_total {
+    width: 100%;
+    margin-left: 100px;
+    margin-bottom: 50px;
+  }
+}
 .frame_total img {
   margin-top: 5px;
   width: 40px;
@@ -335,11 +538,27 @@ input:hover {
   left: 400px;
 }
 
+@media all and (max-width: 767px) {
+  .brand_introduce {
+    width: 100%;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
 .brand_introduce h1 {
   text-align: left;
   margin: 200px 0px 20px 50px;
   font-size: 24px;
   font-weight: bold;
+}
+@media all and (max-width: 767px) {
+  .brand_introduce h1 {
+    width: 100%;
+    line-height: 1.5em;
+    font-size: 18px;
+    text-align: center;
+  }
 }
 .brand_introduce p {
   font-size: 10px;
@@ -348,6 +567,15 @@ input:hover {
   text-align: center;
   text-align: left;
   margin-left: 50px;
+}
+@media all and (max-width: 767px) {
+  .brand_introduce p {
+    width: 100%;
+    text-align: left;
+    padding-right: 50px;
+    font-size: 12px;
+    line-height: 2em;
+  }
 }
 .brand_introduce button {
   border: 0px;
@@ -367,6 +595,7 @@ input:hover {
 }
 
 .paragraph_5 {
+  width: 100%;
   position: relative;
 }
 .paragraph_5 h1 {
@@ -377,6 +606,16 @@ input:hover {
   padding-top: 100px;
   margin-bottom: 50px;
 }
+@media all and (min-width: 768px) and (max-width: 1107px) {
+  .paragraph_5 {
+    width: 100%;
+  }
+}
+@media all and (max-width: 767px) {
+  .paragraph_5 {
+    width: 100%;
+  }
+}
 
 .balls_3 img {
   width: 10%;
@@ -385,38 +624,67 @@ input:hover {
   top: 130px;
   left: 100px;
 }
+@media all and (max-width: 767px) {
+  .balls_3 img {
+    width: 70%;
+    top: 20px;
+    left: -180px;
+  }
+}
 
 .command {
-  display: flex;
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: center;
   font-weight: bold;
+  width: 100%;
+}
+@media all and (min-width: 768px) and (max-width: 1107px) {
+  .command {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+@media all and (max-width: 767px) {
+  .command {
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
 
 .user {
-  width: 25%;
+  width: 300px;
   height: 210px;
-  margin-left: 10px;
+  margin-left: 20px;
   border-radius: 12px;
   background-color: #fff;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
 }
-.user img {
-  width: 25%;
-  border-radius: 100%;
-  margin-left: -200px;
-  margin-top: -50px;
-  z-index: 100;
+@media all and (max-width: 767px) {
+  .user {
+    margin-bottom: 100px;
+  }
 }
 .user p {
   font-size: 10px;
   font-weight: normal;
   line-height: 2em;
   text-align: center;
+  margin: 20px;
   text-align: left;
-  margin: 15px;
+}
+.user h3 {
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+img.photo_1, img.photo_2, img.photo_3 {
+  border-radius: 100%;
+  margin-left: -150px;
+  margin-top: -50px;
+  z-index: 100;
+  width: 25%;
 }
 
 .line_s {
@@ -427,30 +695,51 @@ input:hover {
 }
 
 .company {
-  font-size: 10px;
-  font-weight: normal;
-  line-height: 2em;
-  text-align: center;
+  font-size: 15px;
   text-align: left;
-  margin: 15px;
+  margin: 20px;
   font-weight: bold;
 }
 
-.name {
+.name_star {
   display: flex;
+  justify-content: center;
+  width: 100%;
 }
-.name img {
-  margin-left: 5px;
-  margin-top: 18px;
-  width: 5%;
-  height: 20%;
+@media all and (min-width: 768px) and (max-width: 1107px) {
+  .name_star {
+    width: 100%;
+    display: flex;
+  }
 }
-.name p {
-  margin-right: 100px;
+@media all and (max-width: 767px) {
+  .name_star {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+.star {
+  display: flex;
+  margin-bottom: 20px;
+}
+.star img {
+  margin-left: 10px;
+  width: 10%;
 }
 
 .footer {
   width: 100%;
+}
+@media all and (min-width: 768px) and (max-width: 1107px) {
+  .footer {
+    width: 100%;
+  }
+}
+@media all and (max-width: 767px) {
+  .footer {
+    width: 100%;
+  }
 }
 .footer img {
   width: 100%;
@@ -461,6 +750,11 @@ input:hover {
   font-size: 24px;
   font-weight: bold;
   margin-top: -150px;
+}
+@media all and (max-width: 767px) {
+  .footer h1 {
+    margin-top: -80px;
+  }
 }
 
 .footer_button {
@@ -481,4 +775,5 @@ input:hover {
   color: white;
   background-color: #56C4C5;
   margin: 0 auto;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=all.css.map */
