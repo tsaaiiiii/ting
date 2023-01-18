@@ -105,6 +105,7 @@
         @include iphone{
             margin-left: 350px;
         }
+       
     }
 
  }
@@ -185,7 +186,7 @@
    }
 .title_text{
     margin: 150px 0px 0px 150px;
-    line-height: 2em;
+    line-height: 1.5em;
     @include ipad{
         margin-left: 50px;
     }

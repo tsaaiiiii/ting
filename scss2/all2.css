@@ -202,7 +202,7 @@ table {
 }
 @media all and (max-width: 767px) {
   .navbar input {
-    margin-left: 350px;
+    margin-left: 200px;
   }
 }
 
@@ -297,7 +297,7 @@ table {
 }
 .title .title_text {
   margin: 150px 0px 0px 150px;
-  line-height: 2em;
+  line-height: 1.5em;
 }
 @media all and (min-width: 768px) and (max-width: 1120px) {
   .title .title_text {
